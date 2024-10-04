@@ -10,6 +10,7 @@ Not yet released.
 * Merge requests credentials can now be passed in the repository URL, see :ref:`settings-credentials`.
 * :ref:`mt-azure-openai` automatic suggestion service.
 * :ref:`vcs-bitbucket-cloud`.
+* :ref:'Haiku catkeys' now supported
 
 **Improvements**
 
