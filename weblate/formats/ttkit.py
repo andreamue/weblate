@@ -2191,3 +2191,20 @@ class FluentFormat(TTKitFormat):
         unit = super().create_unit(key, source, target)
         unit.source = unit.target
         return unit
+import csv
+csv.register_dialect("catkeys", CatkeysDialect)
+
+class CatKeys(CatkeysFile):
+    name = gettext_lazy("Catkeys File")
+    format_id = "catkeys"
+    loader = ("catkeys", "CatKeysFormat")
+    autoload = ()
+    check_flags = ("icu-message-format",)
+
+'''    Potential file format objects below
+    name = "catkeys"
+    title = "Haiku catkeys file"
+    extensions = ["catkeys"] '''
+
+
+
